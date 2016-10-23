@@ -1,0 +1,60 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dip"
+    android:background="@drawable/fondo"
+    tools:context=".Asteroides" >
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloAplicacion"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:layout_marginBottom="20dip" />
+    
+    <Button
+        android:id="@+id/botonJugar"
+        style="@style/botones"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/Jugar" 
+        android:onClick="lanzarJuego" />
+    
+    <Button
+        android:id="@+id/botonPuntuaciones"
+        style="@style/botones"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/Puntuaciones" 
+        android:onClick="lanzarPreferencias" />
+    
+     <Button
+        android:id="@+id/botonConfigurar"
+        style="@style/botones"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/Configurar" 
+        android:onClick="lanzarPreferencias" />
+     
+      <Button
+        android:id="@+id/botonAcercaDe"
+        style="@style/botones"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/AcercaDe" />
+      
+      <Button
+        android:id="@+id/botonSalir"
+        style="@style/botones"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/Salir" />
+
+</LinearLayout>
